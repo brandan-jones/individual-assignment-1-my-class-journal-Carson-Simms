@@ -10,11 +10,21 @@ import java.util.List;
 public class JournalService implements IJournalService {
     private List<JournalEntry> journalEntries = new ArrayList<>();
 
+    /*
+    * journalEntry is saved to Array
+    *
+    *
+     */
     @Override
     public void save(JournalEntry journalEntry) {
         journalEntries.add(journalEntry);
     }
 
+    /*
+     * fetches all entries in array
+     *
+     *
+     */
     @Override
     public List<JournalEntry> fetchAll() {
         return journalEntries;
